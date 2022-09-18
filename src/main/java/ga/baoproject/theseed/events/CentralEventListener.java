@@ -9,13 +9,11 @@
 
 package ga.baoproject.theseed.events;
 
+import ga.baoproject.underworld.SacredArtsEventListener;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
-import org.bukkit.event.entity.EntityDamageByEntityEvent;
-import org.bukkit.event.entity.EntityDamageEvent;
-import org.bukkit.event.entity.EntityDeathEvent;
-import org.bukkit.event.entity.EntityRegainHealthEvent;
+import org.bukkit.event.entity.*;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.jetbrains.annotations.NotNull;
@@ -50,5 +48,10 @@ public class CentralEventListener implements Listener {
     @EventHandler(priority = EventPriority.MONITOR)
     public static void onPlayerJoin(PlayerJoinEvent e) {
         PlayerEventHandler.onJoin(e);
+    }
+
+    @EventHandler(priority = EventPriority.HIGHEST)
+    public static void onArrowHit(ProjectileHitEvent e) {
+        SacredArtsEventListener.arrowHitEvent(e);
     }
 }

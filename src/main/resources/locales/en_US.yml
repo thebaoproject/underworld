@@ -27,6 +27,14 @@ plugin:
       legendaryWeapon: "LEGENDARY WEAPON"
       special: "SPECIAL"
       hax: "GM ITEM"
+      element:
+        aqueous_element: "Aqueous Element"
+        aerial_element: "Aerial Element"
+        luminous_element: "Luminous Element"
+        metallic_element: "Metallic Element"
+        thermal_element: "Thermal Element"
+        umbral_element: "Umbral Element"
+        crystalline_element: "Crystalline Element"
     abilityUse: "Whoosh!"
   player:
     healthCard:
@@ -36,7 +44,8 @@ plugin:
   error:
     noMana: "You don't have enough mana left!"
     noArgs: "You must give some arguments."
-    invalidArg: "You gave invalid arguments:"
+    invalidArg: "You gave invalid arguments."
+    notEnoughArgs: "You didn't provide enough arguments!"
   messages:
     player:
       otherDeath: "died."

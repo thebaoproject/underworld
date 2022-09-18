@@ -30,6 +30,14 @@ plugin:
       legendaryWeapon: ""
       special: ""
       hax: ""
+    element:
+      aqueous_element: ""
+      aerial_element: ""
+      luminous_element: ""
+      metallic_element: ""
+      thermal_element: ""
+      umbral_element: ""
+      crystalline_element: ""
     abilityUse: ""
   player:
     healthCard:
@@ -40,6 +48,7 @@ plugin:
     noMana: ""
     noArgs: ""
     invalidArg: ""
+    notEnoughArgs: ""
   messages:
     player:
       otherDeath: ""

@@ -27,6 +27,14 @@ plugin:
       legendaryWeapon: "VŨ KHÍ HUYỀN THOẠI"
       special: "ĐẶC BIỆT"
       hax: "ĐỒ HACKER"
+    element:
+      aqueous_element: "Nguyên tố Thủy"
+      aerial_element: "Nguyên tố Khí"
+      luminous_element: "Nguyên tố Quang"
+      metallic_element: "Nguyên tố Kim"
+      thermal_element: "Nguyên tố Hỏa"
+      umbral_element: "Nguyên tố Hắc"
+      crystalline_element: "Nguyên tố Tinh thể"
     abilityUse: "Vù!"
   player:
     healthCard:
@@ -36,7 +44,8 @@ plugin:
   error:
     noMana: "Bạn không có đủ Mana!"
     noArgs: "Bạn phải đưa ra các tham số!"
-    invalidArg: "Tham số mà bạn đưa ra không hợp lệ:"
+    invalidArg: "Tham số mà bạn đưa ra không hợp lệ."
+    notEnoughArgs: "Bạn chưa đưa ra đủ tham số!"
   messages:
     player:
       otherDead: "đã chết."

@@ -2,8 +2,8 @@ plugins {
     id 'java'
 }
 
-group = 'ga.baoproject.theseed'
-version = '1.0-ALPHA'
+group = 'ga.baoproject.underworld'
+version = '0.0.1-ALPHA'
 
 repositories {
     mavenCentral()

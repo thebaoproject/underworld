@@ -90,7 +90,7 @@ public class EntityUtils {
      * @param path  the path of the tag.
      * @param value the value of the tag.
      */
-    public static void writeTo(@NotNull Damageable e, String path, Object value) {
+    public static void writeTo(@NotNull Entity e, String path, Object value) {
         Plugin pl = TheSeed.getInstance();
         PersistentDataContainer container = e.getPersistentDataContainer();
         if (value instanceof Integer) {
@@ -114,7 +114,7 @@ public class EntityUtils {
      * @return the value read from the tag.
      */
     @Nullable
-    public static <T> T readFrom(@NotNull Damageable e, String path, PersistentDataType<T, T> expectedType) {
+    public static <T> T readFrom(@NotNull Entity e, String path, PersistentDataType<T, T> expectedType) {
         Plugin pl = TheSeed.getInstance();
         PersistentDataContainer container = e.getPersistentDataContainer();
         return container.get(new NamespacedKey(pl, path), expectedType);

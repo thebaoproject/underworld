@@ -16,6 +16,8 @@ import ga.baoproject.theseed.commands.SpawnEntity;
 import ga.baoproject.theseed.completers.GiveItemCompleter;
 import ga.baoproject.theseed.completers.PlayerDataManipulationCompleter;
 import ga.baoproject.theseed.completers.SpawnEntityCompleter;
+import ga.baoproject.underworld.SacredArts;
+import ga.baoproject.underworld.SacredArtsCompleter;
 import org.bukkit.command.PluginCommand;
 import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
@@ -30,17 +32,21 @@ public class CommandManager {
             PluginCommand gsi = plugin.getCommand("gsi");
             PluginCommand mpd = plugin.getCommand("mpd");
             PluginCommand spe = plugin.getCommand("spe");
+            PluginCommand gen = plugin.getCommand("sysgen");
             assert gsi != null;
             assert mpd != null;
             assert spe != null;
+            assert gen != null;
             // Register
             gsi.setExecutor(new GiveItem());
             mpd.setExecutor(new PlayerDataManipulation());
             spe.setExecutor(new SpawnEntity());
+            gen.setExecutor(new SacredArts());
             // Tab Completer
             gsi.setTabCompleter(new GiveItemCompleter());
             mpd.setTabCompleter(new PlayerDataManipulationCompleter());
             spe.setTabCompleter(new SpawnEntityCompleter());
+            gen.setTabCompleter(new SacredArtsCompleter());
         } catch (Exception e) {
             l.error("Failed to register command.");
             e.printStackTrace();

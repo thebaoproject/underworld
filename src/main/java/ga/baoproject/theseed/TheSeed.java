@@ -14,14 +14,13 @@ import ga.baoproject.theseed.events.CentralEventListener;
 import ga.baoproject.theseed.i18n.Locale;
 import ga.baoproject.theseed.i18n.Localized;
 import ga.baoproject.theseed.utils.LocalizationUtils;
-import org.bukkit.command.CommandExecutor;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.slf4j.Logger;
 
 import static org.bukkit.Bukkit.getPluginManager;
 
-public final class TheSeed extends JavaPlugin implements CommandExecutor {
+public class TheSeed extends JavaPlugin {
 
     private static TheSeed instance;
 
@@ -39,7 +38,7 @@ public final class TheSeed extends JavaPlugin implements CommandExecutor {
         Logger l = getSLF4JLogger();
         DebugLogger.setEnabled();
         DebugLogger.setPluginInstance(this);
-        l.info(" ------------ The Block Art Online Project | The Seed ------------ ");
+        l.info(" ----------- The Block Art Online Project | Underworld ----------- ");
         l.info("    Copyright (c) 2022 the Block Art Online Project contributors.  ");
         l.info("    This is free software, licensed under the WTFPL.               ");
         l.info("                                                                   ");

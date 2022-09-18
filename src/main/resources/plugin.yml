@@ -1,10 +1,10 @@
-name: TheSeed
+name: Underworld
 version: '${version}'
-main: ga.baoproject.theseed.TheSeed
+main: ga.baoproject.underworld.Underworld
 api-version: 1.19
-prefix: TheSeed
+prefix: Underworld
 authors: [ SpikeBonjour ]
-description: The plugin which aims to replicate the Sword Art Online experience.
+description: An example implementation of The Seed.
 commands:
   gsi:
     description: Gives the player a special internal item.
@@ -15,5 +15,8 @@ commands:
   spe:
     description: Spawn a custom entity at your location.
     usage: /<command> <entity>
+  sysgen:
+    description: A sacred art for generating element.
+    usage: /<command> (aqueous_element|aerial_element|luminous_element|metallic_element|thermal_element|umbral_element|crystalline_element) (cube_shape|arrow_shape) (discharge|adhere|burst_element)
 
 
